@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isabella Ana Dutra de Sousa · Portfólio</title>
+  <meta name="description" content="Portfólio de Isabella Ana Dutra de Sousa, estudante de Sistemas de Informação com experiência em suporte de TI, desenvolvimento web, redes e banco de dados." />
+  <meta property="og:title" content="Isabella Ana · Portfólio" />
+  <meta property="og:description" content="Estudante de Sistemas de Informação · Suporte de TI · Web · Redes" />
+  <meta property="og:image" content="assets/isabella.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♥</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVEGAÇÃO ===== -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo">Isabella<span>.</span></a>
+
+    <nav class="nav__menu" id="menu" aria-label="Menu principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#competencias">Competências</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__text">
+        <p class="eyebrow mono">Olá, mundo! 👋 eu sou</p>
+        <h1 class="hero__name">Isabella Ana<br /><em>Dutra de Sousa</em></h1>
+        <p class="hero__role mono">
+          <span class="prompt">&gt;</span> <span id="typed"></span><span class="caret">|</span>
+        </p>
+        <p class="hero__lead">
+          Estudante do 8º semestre de Sistemas de Informação, com experiência em
+          suporte de TI na Previdência Social (INSS). Gosto de resolver problemas,
+          aprender rápido e transformar tecnologia em ajuda real para as pessoas.
+        </p>
+        <div class="hero__cta">
+          <a href="#contato" class="btn btn--primary">Vamos conversar</a>
+          <a href="https://github.com/isabellana20" target="_blank" rel="noopener" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <ul class="hero__meta mono">
+          <li>📍 Planaltina – DF</li>
+          <li>🎓 UDF · 8º semestre</li>
+        </ul>
+      </div>
+
+      <div class="hero__photo">
+        <div class="photo-frame">
+          <img src="assets/isabella.jpg" alt="Foto de Isabella Ana sorrindo" width="400" height="400" />
+        </div>
+        <span class="sticker sticker--1 mono">&lt;dev /&gt;</span>
+        <span class="sticker sticker--2">♥ suporte de TI</span>
+        <span class="sticker sticker--3 mono">redes · web · dados</span>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <div class="section__head reveal">
+        <span class="section__num mono">01</span>
+        <h2>Sobre mim</h2>
+      </div>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>
+            Sou estudante de <strong>Sistemas de Informação</strong> no Centro Universitário do
+            Distrito Federal (UDF) e tenho experiência prática em <strong>suporte de TI</strong>,
+            adquirida no estágio na Previdência Social (INSS), onde atuei com manutenção de
+            computadores, sites e aplicativos, e no atendimento a usuários.
+          </p>
+          <p>
+            Tenho conhecimentos em linguagens de programação, banco de dados, desenvolvimento web
+            e redes. Como <strong>monitora de TCC</strong> e <strong>representante de turma</strong>,
+            desenvolvi comunicação, organização e liderança.
+          </p>
+          <p>
+            Busco oportunidades para aplicar e ampliar meus conhecimentos em uma empresa de tecnologia.
+          </p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><span class="stat__num" data-count="8">0</span><span class="stat__label">º semestre de SI</span></div>
+          <div class="stat"><span class="stat__num" data-count="2">0</span><span class="stat__label">certificações Cisco</span></div>
+          <div class="stat"><span class="stat__num" data-count="80">0</span><span class="stat__label">horas em cursos de redes</span></div>
+          <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">idiomas</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section class="section" id="experiencia">
+      <div class="section__head reveal">
+        <span class="section__num mono">02</span>
+        <h2>Experiência &amp; Formação</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="tl-item reveal">
+          <span class="tl-item__date mono">2024 – 2025</span>
+          <div class="tl-item__card">
+            <h3>Estagiária de Suporte de TI</h3>
+            <p class="tl-item__org">Previdência Social (INSS)</p>
+            <ul>
+              <li>Suporte técnico em equipe para computadores, usuários e sites da instituição.</li>
+              <li>Manutenção de sites, aplicativos e equipamentos.</li>
+              <li>Aplicação de diferentes linguagens de programação nas demandas do setor.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <span class="tl-item__date mono">cursando</span>
+          <div class="tl-item__card">
+            <h3>Graduação em Sistemas de Informação</h3>
+            <p class="tl-item__org">UDF – Centro Universitário do Distrito Federal · Brasília – DF</p>
+            <p>8º semestre · Noturno</p>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <span class="tl-item__date mono">UDF</span>
+          <div class="tl-item__card">
+            <h3>Monitora de TCC</h3>
+            <p class="tl-item__org">Atividade acadêmica</p>
+            <p>Apoio aos colegas no planejamento e desenvolvimento do Trabalho de Conclusão de Curso.</p>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <span class="tl-item__date mono">UDF</span>
+          <div class="tl-item__card">
+            <h3>Representante de turma</h3>
+            <p class="tl-item__org">Liderança</p>
+            <p>Ponte de comunicação entre a turma, os professores e a coordenação do curso.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== COMPETÊNCIAS ===== -->
+    <section class="section" id="competencias">
+      <div class="section__head reveal">
+        <span class="section__num mono">03</span>
+        <h2>Competências</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skill reveal">
+          <div class="skill__icon">🛠️</div>
+          <h3>Suporte de TI</h3>
+          <p>Manutenção de computadores, atendimento a usuários e resolução de problemas.</p>
+        </div>
+        <div class="skill reveal">
+          <div class="skill__icon">🌐</div>
+          <h3>Web</h3>
+          <p>Desenvolvimento web; manutenção de sites e aplicativos.</p>
+        </div>
+        <div class="skill reveal">
+          <div class="skill__icon">🔌</div>
+          <h3>Redes</h3>
+          <p>Programação de redes e defesa de redes (Cisco).</p>
+        </div>
+        <div class="skill reveal">
+          <div class="skill__icon">🗄️</div>
+          <h3>Dados</h3>
+          <p>Banco de dados.</p>
+        </div>
+        <div class="skill skill--wide reveal">
+          <div class="skill__icon">💬</div>
+          <h3>Comportamentais</h3>
+          <ul class="tags">
+            <li>Trabalho em equipe</li>
+            <li>Comunicação</li>
+            <li>Liderança</li>
+            <li>Aprendizado rápido</li>
+            <li>Organização</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS (carregados do GitHub) ===== -->
+    <section class="section" id="projetos">
+      <div class="section__head reveal">
+        <span class="section__num mono">04</span>
+        <h2>Projetos</h2>
+      </div>
+      <div class="featured">
+        <!-- Anna's Suplementos -->
+        <article class="feat reveal">
+          <button class="feat__cover" data-gallery="annas" aria-label="Ver telas do projeto Anna's Suplementos">
+            <img src="assets/projetos/annas-1.jpg" alt="Página inicial da loja Anna's Suplementos" loading="lazy" />
+            <span class="feat__zoom mono">ver telas ⤢</span>
+          </button>
+          <div class="feat__body">
+            <span class="feat__kicker mono">E-commerce · PHP</span>
+            <h3>Anna's Suplementos</h3>
+            <p>
+              Loja virtual de suplementos com página inicial, catálogo com filtro por categoria,
+              carrinho de compras usando sessões em PHP, finalização de pedido e formulário de contato.
+            </p>
+            <ul class="tags">
+              <li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Sessões</li>
+            </ul>
+            <div class="feat__actions">
+              <button class="btn btn--primary btn--sm" data-gallery="annas">Ver telas</button>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/isabellana20/isabellana20.github.io/tree/main/projetos/annas-suplementos" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dia das Crianças -->
+        <article class="feat feat--alt reveal">
+          <button class="feat__cover" data-gallery="criancas" aria-label="Ver telas do site Dia das Crianças">
+            <img src="assets/projetos/criancas-1.jpg" alt="Página inicial do site Dia das Crianças" loading="lazy" />
+            <span class="feat__zoom mono">ver telas ⤢</span>
+          </button>
+          <div class="feat__body">
+            <span class="feat__kicker mono">Site temático · Bootstrap</span>
+            <h3>Dia das Crianças</h3>
+            <p>
+              Site responsivo sobre o 12 de outubro, com carrossel de imagens, cards, modal,
+              menu lateral (offcanvas), abas e acordeão sobre a história e os direitos das crianças.
+            </p>
+            <ul class="tags">
+              <li>HTML</li><li>Bootstrap 5</li><li>Font Awesome</li><li>Responsivo</li>
+            </ul>
+            <div class="feat__actions">
+              <a class="btn btn--primary btn--sm" href="projetos/dia-das-criancas/index.html" target="_blank" rel="noopener">Ver site ao vivo ↗</a>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/isabellana20/isabellana20.github.io/tree/main/projetos/dia-das-criancas" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subhead reveal">Mais no GitHub</h3>
+      <p class="section__intro reveal">
+        Repositórios públicos carregados automaticamente do meu
+        <a href="https://github.com/isabellana20" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+      <div class="projects" id="projects">
+        <div class="project project--loading"><span></span><span></span><span></span></div>
+        <div class="project project--loading"><span></span><span></span><span></span></div>
+        <div class="project project--loading"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <!-- ===== CURSOS & IDIOMAS ===== -->
+    <section class="section" id="cursos">
+      <div class="section__head reveal">
+        <span class="section__num mono">05</span>
+        <h2>Cursos &amp; Idiomas</h2>
+      </div>
+
+      <div class="courses-grid">
+        <ul class="courses reveal">
+          <li>
+            <div><h3>Defesa de Redes</h3><p>Cisco Networking Academy · 40 h</p></div>
+            <span class="mono">2025</span>
+          </li>
+          <li>
+            <div><h3>Networking Programming</h3><p>Cisco Networking Academy · 40 h</p></div>
+            <span class="mono">2024</span>
+          </li>
+          <li>
+            <div><h3>Inglês</h3><p>Centro Interescolar de Línguas 1 (CIL 1)</p></div>
+            <span class="mono">2020 – 2021</span>
+          </li>
+          <li>
+            <div><h3>Auxiliar Administrativo</h3><p>Concretta Educação Profissional</p></div>
+            <span class="mono">2019 – 2021</span>
+          </li>
+        </ul>
+
+        <div class="langs reveal">
+          <h3>Idiomas</h3>
+          <div class="lang">
+            <div class="lang__row"><span>Português</span><span class="mono">nativo</span></div>
+            <div class="bar"><span data-level="100"></span></div>
+          </div>
+          <div class="lang">
+            <div class="lang__row"><span>Inglês</span><span class="mono">intermediário</span></div>
+            <div class="bar"><span data-level="60"></span></div>
+          </div>
+          <div class="lang">
+            <div class="lang__row"><span>Espanhol</span><span class="mono">básico</span></div>
+            <div class="bar"><span data-level="30"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section contact" id="contato">
+      <div class="contact__box reveal">
+        <span class="section__num mono">06</span>
+        <h2>Vamos trabalhar juntos?</h2>
+        <p>Estou aberta a oportunidades de estágio e emprego na área de tecnologia.</p>
+
+        <div class="contact__links">
+          <button class="contact__item" id="copyEmail" data-email="isabella.adutra@gmail.com">
+            <span class="contact__label mono">e-mail</span>
+            <span class="contact__value">isabella.adutra@gmail.com</span>
+            <span class="contact__hint mono" id="copyHint">clique para copiar</span>
+          </button>
+          <a class="contact__item" href="https://wa.me/5561995023334" target="_blank" rel="noopener">
+            <span class="contact__label mono">telefone / whatsapp</span>
+            <span class="contact__value">(61) 99502-3334</span>
+          </a>
+          <a class="contact__item" href="https://linkedin.com/in/isabellaana" target="_blank" rel="noopener">
+            <span class="contact__label mono">linkedin</span>
+            <span class="contact__value">in/isabellaana</span>
+          </a>
+          <a class="contact__item" href="https://github.com/isabellana20" target="_blank" rel="noopener">
+            <span class="contact__label mono">github</span>
+            <span class="contact__value">@isabellana20</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Feito com <span class="heart">♥</span> por Isabella Ana · <span id="year"></span></p>
+    <a href="#inicio" class="mono">voltar ao topo ↑</a>
+  </footer>
+
+  <!-- Galeria (lightbox) dos projetos -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria do projeto" hidden>
+    <button class="lightbox__close" id="lbClose" aria-label="Fechar">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <figure class="lightbox__fig">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap" class="mono"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
